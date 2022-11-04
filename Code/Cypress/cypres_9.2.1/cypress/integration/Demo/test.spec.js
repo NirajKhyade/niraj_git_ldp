@@ -40,6 +40,7 @@ describe('Demo', function () {
             cy.get('#password').type(data.passsword)
 
             cy.get('#login').click()
+            
         })
 
 
