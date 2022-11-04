@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: "Poppins";
+
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(./images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+section .imgBox {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+/* section .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.contentBox {
+  background: white;
+  display: flex;
+
+  /* justify-content: space-between; */
+  height: 55%;
+  width: 50%;
+  border: none;
+  border-radius: 5px;
+}
+
+.btnBox {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+.formBox {
+  display: flex;
+  margin-top: 20px;
+  flex: 3;
+  gap: 10%;
+  text-align: center;
+  flex-direction: column;
+}
+
+.loginBox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex: 1;
+}
+.registerBox {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex: 1;
+}
+.frgtPassBox {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex: 1;
+}
+Button {
+  background-color: white;
+  border: none;
+  width: 100%;
+  color: gray;
+}
+
+button:active {
+  background: #2ecc71;
+  color: white;
+}
+
+button:focus {
+  background: #2ecc71;
+  color: white;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.input-group {
+  border: none;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 3%;
+  width: 400px;
+  /* width: 100%; */
+}
+
+input {
+  border: none;
+  background: #e5e7e9;
+
+  padding: 3%;
+  width: 400px;
+  /* width: 100%; */
+}
+
+#submitBtnReg {
+  background-color: #2ecc71;
+  border: none;
+  color: white;
+  padding: 3%;
+  width: 400px;
+}
+#submitBtnLog {
+  background-color: #2ecc71;
+  border: none;
+  color: white;
+  padding: 3%;
+  width: 400px;
+}
+
+.iconStyle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+#frgtRedirect{
+  text-decoration: none;
+  color: #060707;
+}
+
+#mainHeading{
+  position: absolute;
+  top: 20px;
+color: white;
+left: 45%;
+}
+.iconStyle:hover{
+  background-color: greenyellow;
+  color: blue;
+}
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: rgb(236, 232, 232);
+  text-align: center;
+}

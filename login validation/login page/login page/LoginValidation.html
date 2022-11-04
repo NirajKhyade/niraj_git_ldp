@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./LoginValid.css">
+   
+</head>
+
+<body>
+    <h1 id="mainHeading">Triple Forms</h1>
+    <section>
+        <!-- <div class="imgBox">
+            <img src="./background.jpg" />
+        </div> -->
+        
+        <div class="contentBox">
+            <div class="btnBox">
+                <div class="loginBox">
+                    <button class="iconStyle" id="loginBtn" type="button"><span><img width="20px" height="20px"
+                                src="./images/user-interface.png"></span>Login</button>
+                </div>
+                <div class="registerBox">
+                    <button type="button" id="registerBtn" class="iconStyle"><span><img width="20px" height="20px"
+                                src="./images/edit.png"></span>Register</button>
+                </div>
+                <div class="frgtPassBox">
+                    <button type="button" id="frgtBtn" class="iconStyle"><span><img width="20px" height="20px"
+                                src="./images/key.png"></span>Forgot Password?</button>
+                </div>
+
+            </div>
+            <div class="formBox">
+
+                <form id="login" method="post" class="form">
+                    <h2>Login here</h2>
+                    <div class="input-group">
+                        <input id="userName" type="text" name="username" placeholder="Username">
+                        <input id="password" type="password" name="password" placeholder="Password">
+                        <p id="message"></p>
+                        <Button id="submitBtnLog" type="submit" value="Sign-in">Log-in</Button>
+                    </div>
+                    <a id = "frgtRedirect" href="forgotPassRedirect.html" target ="_blank" >Forgot Password?</a>
+                </form>
+                <form id="register" method="post" class="form" action="registerRedirect.html">
+                    <h2>Register here</h2>
+                    <div class="input-group">
+                        <input type="text" name="name" placeholder="Enter Name">
+                        <input type="email" name="name" placeholder="Enter email">
+                        <input type="email" name="name" placeholder="Enter Mobile Number">
+                        <input type="password" name="password" placeholder="password">
+                        <Button id="submitBtnReg" type="submit" value="Sign-in">Register</Button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+
+            const registerBox = document.querySelector('#register');
+            registerBox.style.display = 'none';
+            const loginBtn = document.querySelector('#loginBtn');
+            loginBtn.addEventListener('click', function (event) {
+                const registerBox = document.querySelector('#register');
+                const loginBox = document.querySelector('#login');
+                const contentBox = document.querySelector('.contentBox');
+                contentBox.style.height = '50%';
+                registerBox.style.display = 'none';
+                loginBox.style.display = 'flex';
+
+
+            })
+
+            const regBtn = document.querySelector('#registerBtn');
+            regBtn.addEventListener('click', function (event) {
+                const loginBox = document.querySelector('#login');
+                const registerBox = document.querySelector('#register');
+                const contentBox = document.querySelector('.contentBox');
+                contentBox.style.height = '60%';
+                registerBox.style.display = 'flex';
+                loginBox.style.display = 'none';
+
+
+            })
+            const frgtBtn = document.querySelector('#frgtBtn');
+            frgtBtn.addEventListener('click',function(event){
+               window.open("forgotPassRedirect.html");
+            })
+
+        </script>
+         <div class="footer">
+            <p>Ⓒ 2019 Triple Forms.All Rights Reserved | Design By W3layouts</p>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
