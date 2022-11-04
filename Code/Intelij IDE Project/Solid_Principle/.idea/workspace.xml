@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="319572b4-6f52-4fee-9a82-7f9f1cb7153a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ISP/corrected/InterfaceSegregation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ISP/corrected/OnlineOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ISP/corrected/OrderOnline.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ISP/corrected/PayInPerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ISP/corrected/PayOnline.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ISP/corrected/WalkInPerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ISP/corrected/WalkInPersonOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LSP/Voilation/Facebook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LSP/Voilation/Whatsapp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LSP/corrected/Facebook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LSP/corrected/SocialMedia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LSP/corrected/paymentMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OCP/Voilation/NotificationServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OCP/corrected/EmailOtp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OCP/corrected/MobileOtp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OCP/corrected/NotificationServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OCP/corrected/SentOtpNotificationMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/srp/Corrected/BankingServicesMain.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FNttzTyWul0xzJFbCkPjdaArhU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="DIP.DIPvolatile" />
+      <recent name="srp" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="OCP.OCPcorrected" />
+      <recent name="correctOCP" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="correctsrp" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Bank" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="srp.Voilation.Bank" />
+      <module name="Solid_Principle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="srp.Voilation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InterfaceSegregation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ISP.corrected.InterfaceSegregation" />
+      <module name="Solid_Principle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ISP.corrected.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DIP.Voilation.Main" />
+      <module name="Solid_Principle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DIP.Voilation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DIP.corrected.MainClass" />
+      <module name="Solid_Principle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DIP.corrected.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SentOtpNotificationMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OCP.corrected.SentOtpNotificationMain" />
+      <module name="Solid_Principle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="OCP.corrected.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.InterfaceSegregation" />
+        <item itemvalue="Application.MainClass" />
+        <item itemvalue="Application.SentOtpNotificationMain" />
+        <item itemvalue="Application.Bank" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="319572b4-6f52-4fee-9a82-7f9f1cb7153a" name="Changes" comment="" />
+      <created>1664344589165</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664344589165</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Solid_Principle$Singleton.ic" NAME="Singleton Coverage Results" MODIFIED="1664357324791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.*</FILTER>
+    </SUITE>
+  </component>
+</project>
