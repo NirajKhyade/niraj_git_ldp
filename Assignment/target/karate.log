@@ -1,0 +1,1291 @@
+15:53:47.132 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+15:53:48.393 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:53:52.014 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @debug
+15:53:52.292 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:53:52.462 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:53:53.000 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/labels
+1 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:53:54.308 [main] DEBUG com.intuit.karate - response time in milliseconds: 1279
+1 < 200
+1 < Content-Type: application/json
+1 < Content-Length: 195
+1 < Connection: keep-alive
+1 < Date: Fri, 11 Nov 2022 10:23:53 GMT
+1 < Access-Control-Allow-Credentials: false
+1 < Access-Control-Allow-Origin: *
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < Vary: Accept-Encoding
+1 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 78fad162bf3327a21c1befb2923b3f84.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOM78-P5
+1 < X-Amz-Cf-Id: Gq4fIZm6Fy5oI-f4_xtCvs_B2Fm6dYokrPKJXAMUaxjZCTtYw9fxsw==
+1 < Set-Cookie: csrf=f1927b03dbdf4808a2eb1ff312d29205; Max-Age=1983522233000; Expires=Sun, 06 Mar 64878 16:27:14 GMT; Domain=api.todoist.com; Secure
+[
+	{
+		"id": 2163168390,
+		"name": "FastFood",
+		"order": 1,
+		"color": 47,
+		"favorite": false
+	},
+	{
+		"id": 2163168402,
+		"name": "Food",
+		"order": 2,
+		"color": 47,
+		"favorite": false
+	}
+]
+
+
+15:53:54.515 [main] DEBUG com.intuit.karate - request:
+2 > POST https://api.todoist.com/rest/v1/labels
+2 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+2 > Cookie: csrf=f1927b03dbdf4808a2eb1ff312d29205
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 15
+2 > Host: api.todoist.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Food"}
+
+15:53:55.242 [main] DEBUG com.intuit.karate - response time in milliseconds: 726
+2 < 200
+2 < Content-Type: application/json
+2 < Content-Length: 86
+2 < Connection: keep-alive
+2 < Date: Fri, 11 Nov 2022 10:23:55 GMT
+2 < Access-Control-Allow-Credentials: false
+2 < Access-Control-Allow-Origin: *
+2 < Cache-Control: no-cache
+2 < Referrer-Policy: strict-origin-when-cross-origin
+2 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+2 < Vary: Accept-Encoding
+2 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+2 < X-Cache: Miss from cloudfront
+2 < Via: 1.1 d8a08c73e57442ba7d4fdf708da56e92.cloudfront.net (CloudFront)
+2 < X-Amz-Cf-Pop: BOM78-P5
+2 < X-Amz-Cf-Id: FVC4jdynRXhne60VO7BCXfCweE_kA3tA5xtuormMxzC_vfZmtMER9A==
+{
+	"id": 2163168402,
+	"name": "Food",
+	"order": 2,
+	"color": 47,
+	"favorite": false
+}
+
+
+15:53:55.250 [main] INFO  com.intuit.karate - [print] {
+  "id": 2163168402,
+  "name": "Food",
+  "order": 2,
+  "color": 47,
+  "favorite": false
+}
+ 
+15:53:55.268 [main] DEBUG com.intuit.karate - request:
+3 > GET https://api.todoist.com/rest/v1/labels/2163168402
+3 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+3 > Cookie: csrf=f1927b03dbdf4808a2eb1ff312d29205
+3 > Host: api.todoist.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+3 > Accept-Encoding: gzip,deflate
+
+
+15:53:56.003 [main] DEBUG com.intuit.karate - response time in milliseconds: 734
+3 < 200
+3 < Content-Type: application/json
+3 < Content-Length: 86
+3 < Connection: keep-alive
+3 < Date: Fri, 11 Nov 2022 10:23:55 GMT
+3 < Access-Control-Allow-Credentials: false
+3 < Access-Control-Allow-Origin: *
+3 < Referrer-Policy: strict-origin-when-cross-origin
+3 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+3 < Vary: Accept-Encoding
+3 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+3 < X-Cache: Miss from cloudfront
+3 < Via: 1.1 4d72934ee8dc6e546ce338ca9bb0d62e.cloudfront.net (CloudFront)
+3 < X-Amz-Cf-Pop: BOM78-P5
+3 < X-Amz-Cf-Id: IZnD3qTinPawXqkZHhv_7myp5ze0b-MPwhd6XrKTDbaVLKHVxvNCMg==
+{
+	"id": 2163168402,
+	"name": "Food",
+	"order": 2,
+	"color": 47,
+	"favorite": false
+}
+
+
+15:53:56.017 [main] DEBUG com.intuit.karate - request:
+4 > POST https://api.todoist.com/rest/v1/labels/2163168402
+4 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+4 > Cookie: csrf=f1927b03dbdf4808a2eb1ff312d29205
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 19
+4 > Host: api.todoist.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+4 > Accept-Encoding: gzip,deflate
+{"name":"FastFood"}
+
+15:53:56.822 [main] DEBUG com.intuit.karate - response time in milliseconds: 804
+4 < 400
+4 < Content-Type: text/plain; charset=utf-8
+4 < Content-Length: 35
+4 < Connection: keep-alive
+4 < Date: Fri, 11 Nov 2022 10:23:56 GMT
+4 < Access-Control-Allow-Credentials: false
+4 < Access-Control-Allow-Origin: *
+4 < Cache-Control: no-cache
+4 < Referrer-Policy: strict-origin-when-cross-origin
+4 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+4 < Vary: Accept-Encoding
+4 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+4 < X-Cache: Error from cloudfront
+4 < Via: 1.1 24308854e88feb19b441efca32b2020c.cloudfront.net (CloudFront)
+4 < X-Amz-Cf-Pop: BOM78-P5
+4 < X-Amz-Cf-Id: VVlRYqb9XCyg7ZuSIoH4mU7noXIiGoe7JPk5ihaCgIhSaSurcFLVEg==
+Label with this name already exists
+
+15:53:56.826 [main] ERROR com.intuit.karate - classpath:KarateAssignment/feature/labels.feature:42
+Then status 204
+status code was: 400, expected: 204, response time in milliseconds: 804, url: https://api.todoist.com/rest/v1/labels/2163168402, response: 
+Label with this name already exists
+classpath:KarateAssignment/feature/labels.feature:42
+15:53:57.579 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:53:57.591 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/projects
+1 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:53:57.949 [main] DEBUG com.intuit.karate - response time in milliseconds: 358
+1 < 200
+1 < Content-Type: application/json
+1 < Content-Length: 658
+1 < Connection: keep-alive
+1 < Date: Fri, 11 Nov 2022 10:23:57 GMT
+1 < Access-Control-Allow-Credentials: false
+1 < Access-Control-Allow-Origin: *
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < Vary: Accept-Encoding
+1 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 4d72934ee8dc6e546ce338ca9bb0d62e.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOM78-P5
+1 < X-Amz-Cf-Id: kqw4zZ9D_nmDV3y82cwt9jcMKgO92IS1ULT-7RJcoDwCO9nEpFm4aA==
+1 < Set-Cookie: csrf=820a341c3f594cc19359c0965043ad53; Max-Age=1983522237000; Expires=Sun, 06 Mar 64878 17:33:57 GMT; Domain=api.todoist.com; Secure
+[
+	{
+		"id": 2301601652,
+		"color": 48,
+		"name": "Inbox",
+		"comment_count": 0,
+		"shared": false,
+		"favorite": false,
+		"sync_id": 0,
+		"inbox_project": true,
+		"url": "https://todoist.com/showProject?id=2301601652"
+	},
+	{
+		"id": 2301625727,
+		"order": 1,
+		"color": 47,
+		"name": "API Project",
+		"comment_count": 0,
+		"shared": false,
+		"favorite": false,
+		"sync_id": 0,
+		"url": "https://todoist.com/showProject?id=2301625727"
+	},
+	{
+		"id": 2302157203,
+		"order": 2,
+		"color": 47,
+		"name": "Things To Buy",
+		"comment_count": 0,
+		"shared": false,
+		"favorite": false,
+		"sync_id": 0,
+		"url": "https://todoist.com/showProject?id=2302157203"
+	}
+]
+
+
+15:53:57.967 [main] DEBUG com.intuit.karate - request:
+2 > POST https://api.todoist.com/rest/v1/projects
+2 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+2 > Cookie: csrf=820a341c3f594cc19359c0965043ad53
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 24
+2 > Host: api.todoist.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Shopping List"}
+
+15:53:58.980 [main] DEBUG com.intuit.karate - response time in milliseconds: 1013
+2 < 200
+2 < Content-Type: application/json
+2 < Content-Length: 206
+2 < Connection: keep-alive
+2 < Date: Fri, 11 Nov 2022 10:23:58 GMT
+2 < Access-Control-Allow-Credentials: false
+2 < Access-Control-Allow-Origin: *
+2 < Cache-Control: no-cache
+2 < Referrer-Policy: strict-origin-when-cross-origin
+2 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+2 < Vary: Accept-Encoding
+2 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+2 < X-Cache: Miss from cloudfront
+2 < Via: 1.1 ca6a8f79bd862f05717933aee496ef70.cloudfront.net (CloudFront)
+2 < X-Amz-Cf-Pop: BOM78-P5
+2 < X-Amz-Cf-Id: cR056uwfzXiRShAiqlsvBANv52UgyCDuqkHXlVP9RxOkd1wHhG4ELA==
+{
+	"id": 2302225658,
+	"order": 3,
+	"color": 47,
+	"name": "Shopping List",
+	"comment_count": 0,
+	"shared": false,
+	"favorite": false,
+	"sync_id": 0,
+	"url": "https://todoist.com/showProject?id=2302225658"
+}
+
+
+15:53:58.984 [main] INFO  com.intuit.karate - [print] {
+  "id": 2302225658,
+  "order": 3,
+  "color": 47,
+  "name": "Shopping List",
+  "comment_count": 0,
+  "shared": false,
+  "favorite": false,
+  "sync_id": 0,
+  "url": "https://todoist.com/showProject?id=2302225658"
+}
+ 
+15:53:58.994 [main] DEBUG com.intuit.karate - request:
+3 > GET https://api.todoist.com/rest/v1/projects/2302225658
+3 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+3 > Cookie: csrf=820a341c3f594cc19359c0965043ad53
+3 > Host: api.todoist.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+3 > Accept-Encoding: gzip,deflate
+
+
+15:53:59.853 [main] DEBUG com.intuit.karate - response time in milliseconds: 859
+3 < 200
+3 < Content-Type: application/json
+3 < Content-Length: 206
+3 < Connection: keep-alive
+3 < Date: Fri, 11 Nov 2022 10:23:59 GMT
+3 < Access-Control-Allow-Credentials: false
+3 < Access-Control-Allow-Origin: *
+3 < Referrer-Policy: strict-origin-when-cross-origin
+3 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+3 < Vary: Accept-Encoding
+3 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+3 < X-Cache: Miss from cloudfront
+3 < Via: 1.1 40459db2072186c90a4a2b4ca9cafa56.cloudfront.net (CloudFront)
+3 < X-Amz-Cf-Pop: BOM78-P5
+3 < X-Amz-Cf-Id: 8h1nON2jB6Dc8nilN7SQL9OWYrLBFMA9O7fZwn6dnKfVwySo7D9OCQ==
+{
+	"id": 2302225658,
+	"order": 3,
+	"color": 47,
+	"name": "Shopping List",
+	"comment_count": 0,
+	"shared": false,
+	"favorite": false,
+	"sync_id": 0,
+	"url": "https://todoist.com/showProject?id=2302225658"
+}
+
+
+15:53:59.881 [main] DEBUG com.intuit.karate - request:
+4 > POST https://api.todoist.com/rest/v1/projects/2302225658
+4 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+4 > Cookie: csrf=820a341c3f594cc19359c0965043ad53
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 24
+4 > Host: api.todoist.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+4 > Accept-Encoding: gzip,deflate
+{"name":"Things To Buy"}
+
+15:54:00.283 [main] DEBUG com.intuit.karate - response time in milliseconds: 401
+4 < 204
+4 < Content-Type: text/html; charset=utf-8
+4 < Connection: keep-alive
+4 < Date: Fri, 11 Nov 2022 10:24:00 GMT
+4 < Access-Control-Allow-Credentials: false
+4 < Access-Control-Allow-Origin: *
+4 < Cache-Control: no-cache
+4 < Referrer-Policy: strict-origin-when-cross-origin
+4 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+4 < Vary: Accept-Encoding
+4 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+4 < X-Cache: Miss from cloudfront
+4 < Via: 1.1 8ef0b0e6ce9484cc7ec662abacbfc63a.cloudfront.net (CloudFront)
+4 < X-Amz-Cf-Pop: BOM78-P5
+4 < X-Amz-Cf-Id: bP4HQeEeGtemVnHphvGH-K8VEH5fWRmu_tqWfztLDkPpIrypS_2IjQ==
+
+
+15:54:00.294 [main] DEBUG com.intuit.karate - request:
+5 > GET https://api.todoist.com/rest/v1/projects/2302225658/collaborators
+5 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+5 > Cookie: csrf=820a341c3f594cc19359c0965043ad53
+5 > Host: api.todoist.com
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+5 > Accept-Encoding: gzip,deflate
+
+
+15:54:01.179 [main] DEBUG com.intuit.karate - response time in milliseconds: 885
+5 < 200
+5 < Content-Type: application/json
+5 < Content-Length: 3
+5 < Connection: keep-alive
+5 < Date: Fri, 11 Nov 2022 10:24:01 GMT
+5 < Access-Control-Allow-Credentials: false
+5 < Access-Control-Allow-Origin: *
+5 < Referrer-Policy: strict-origin-when-cross-origin
+5 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+5 < Vary: Accept-Encoding
+5 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+5 < X-Cache: Miss from cloudfront
+5 < Via: 1.1 c6d0b4e932dc4becabe63c34801e4e44.cloudfront.net (CloudFront)
+5 < X-Amz-Cf-Pop: BOM78-P5
+5 < X-Amz-Cf-Id: axFgpzSGuz1hOlxxLrziHjY7xjsq2fVvrZTcqDSmw089We3TK5Su9A==
+[]
+
+
+15:54:01.220 [main] DEBUG com.intuit.karate - request:
+6 > GET https://api.todoist.com/rest/v1/sections?projID=2302225658
+6 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+6 > Cookie: csrf=820a341c3f594cc19359c0965043ad53
+6 > Host: api.todoist.com
+6 > Connection: Keep-Alive
+6 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+6 > Accept-Encoding: gzip,deflate
+
+
+15:54:01.635 [main] DEBUG com.intuit.karate - response time in milliseconds: 413
+6 < 200
+6 < Content-Type: application/json
+6 < Content-Length: 188
+6 < Connection: keep-alive
+6 < Date: Fri, 11 Nov 2022 10:24:01 GMT
+6 < Access-Control-Allow-Credentials: false
+6 < Access-Control-Allow-Origin: *
+6 < Referrer-Policy: strict-origin-when-cross-origin
+6 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+6 < Vary: Accept-Encoding
+6 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+6 < X-Cache: Miss from cloudfront
+6 < Via: 1.1 ff28c096d027c983cb30a1fcf83ea578.cloudfront.net (CloudFront)
+6 < X-Amz-Cf-Pop: BOM78-P5
+6 < X-Amz-Cf-Id: -DjNzH6Ab0tfVD8MNptu5-VmxURkKu549RbmrXj5bdsDCX-bkuqXtQ==
+[
+	{
+		"id": 106557305,
+		"project_id": 2302157203,
+		"order": 9,
+		"name": "Supermarket"
+	},
+	{
+		"id": 106557310,
+		"project_id": 2302157203,
+		"order": 10,
+		"name": "Supermarket"
+	}
+]
+
+
+15:54:01.648 [main] DEBUG com.intuit.karate - request:
+7 > POST https://api.todoist.com/rest/v1/sections
+7 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+7 > Cookie: csrf=820a341c3f594cc19359c0965043ad53
+7 > Content-Type: application/json; charset=UTF-8
+7 > Content-Length: 46
+7 > Host: api.todoist.com
+7 > Connection: Keep-Alive
+7 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+7 > Accept-Encoding: gzip,deflate
+{"project_id":"2302157203","name":"Groceries"}
+
+15:54:02.761 [main] DEBUG com.intuit.karate - response time in milliseconds: 1111
+7 < 200
+7 < Content-Type: application/json
+7 < Content-Length: 84
+7 < Connection: keep-alive
+7 < Date: Fri, 11 Nov 2022 10:24:02 GMT
+7 < Access-Control-Allow-Credentials: false
+7 < Access-Control-Allow-Origin: *
+7 < Cache-Control: no-cache
+7 < Referrer-Policy: strict-origin-when-cross-origin
+7 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+7 < Vary: Accept-Encoding
+7 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+7 < X-Cache: Miss from cloudfront
+7 < Via: 1.1 d50d717134ed031589d1b934a41d279a.cloudfront.net (CloudFront)
+7 < X-Amz-Cf-Pop: BOM78-P5
+7 < X-Amz-Cf-Id: pa7IahovgZKxXGUOcxsUsx538O7EpCuKecrCSYbRMVWymT66ywCSXQ==
+{
+	"id": 106570098,
+	"project_id": 2302157203,
+	"order": 11,
+	"name": "Groceries"
+}
+
+
+15:54:02.764 [main] INFO  com.intuit.karate - [print] {
+  "id": 106570098,
+  "project_id": 2302157203,
+  "order": 11,
+  "name": "Groceries"
+}
+ 
+15:54:02.772 [main] DEBUG com.intuit.karate - request:
+8 > GET https://api.todoist.com/rest/v1/sections/106570098
+8 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+8 > Cookie: csrf=820a341c3f594cc19359c0965043ad53
+8 > Host: api.todoist.com
+8 > Connection: Keep-Alive
+8 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+8 > Accept-Encoding: gzip,deflate
+
+
+15:54:03.580 [main] DEBUG com.intuit.karate - response time in milliseconds: 807
+8 < 200
+8 < Content-Type: application/json
+8 < Content-Length: 84
+8 < Connection: keep-alive
+8 < Date: Fri, 11 Nov 2022 10:24:03 GMT
+8 < Access-Control-Allow-Credentials: false
+8 < Access-Control-Allow-Origin: *
+8 < Referrer-Policy: strict-origin-when-cross-origin
+8 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+8 < Vary: Accept-Encoding
+8 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+8 < X-Cache: Miss from cloudfront
+8 < Via: 1.1 ca6a8f79bd862f05717933aee496ef70.cloudfront.net (CloudFront)
+8 < X-Amz-Cf-Pop: BOM78-P5
+8 < X-Amz-Cf-Id: Ek1NNsPKX160gRoKFD8KCdX5F7DPAI7vLZIoU64vUG0zU0jTM7uAGw==
+{
+	"id": 106570098,
+	"project_id": 2302157203,
+	"order": 11,
+	"name": "Groceries"
+}
+
+
+15:54:03.591 [main] DEBUG com.intuit.karate - request:
+9 > POST https://api.todoist.com/rest/v1/sections/106570098
+9 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+9 > Cookie: csrf=820a341c3f594cc19359c0965043ad53
+9 > Content-Type: application/json; charset=UTF-8
+9 > Content-Length: 22
+9 > Host: api.todoist.com
+9 > Connection: Keep-Alive
+9 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+9 > Accept-Encoding: gzip,deflate
+{"name":"Supermarket"}
+
+15:54:04.092 [main] DEBUG com.intuit.karate - response time in milliseconds: 499
+9 < 204
+9 < Content-Type: text/html; charset=utf-8
+9 < Connection: keep-alive
+9 < Date: Fri, 11 Nov 2022 10:24:03 GMT
+9 < Access-Control-Allow-Credentials: false
+9 < Access-Control-Allow-Origin: *
+9 < Cache-Control: no-cache
+9 < Referrer-Policy: strict-origin-when-cross-origin
+9 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+9 < Vary: Accept-Encoding
+9 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+9 < X-Cache: Miss from cloudfront
+9 < Via: 1.1 853b5be3b78b835fb7185ce90c946656.cloudfront.net (CloudFront)
+9 < X-Amz-Cf-Pop: BOM78-P5
+9 < X-Amz-Cf-Id: sd8e98hizbM6b-RF1wtLNze5XfKEiOvphZoC_J6tt7PSpExtpRyVTQ==
+
+
+15:54:04.127 [main] DEBUG com.intuit.karate - request:
+10 > GET https://api.todoist.com/rest/v1/tasks?section_Id=106570098
+10 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+10 > Cookie: csrf=820a341c3f594cc19359c0965043ad53
+10 > Host: api.todoist.com
+10 > Connection: Keep-Alive
+10 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+10 > Accept-Encoding: gzip,deflate
+
+
+15:54:04.502 [main] DEBUG com.intuit.karate - response time in milliseconds: 370
+10 < 200
+10 < Content-Type: application/json
+10 < Content-Length: 3
+10 < Connection: keep-alive
+10 < Date: Fri, 11 Nov 2022 10:24:04 GMT
+10 < Access-Control-Allow-Credentials: false
+10 < Access-Control-Allow-Origin: *
+10 < Referrer-Policy: strict-origin-when-cross-origin
+10 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+10 < Vary: Accept-Encoding
+10 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+10 < X-Cache: Miss from cloudfront
+10 < Via: 1.1 aa6523b9d47ec443d130f60e2b450e3c.cloudfront.net (CloudFront)
+10 < X-Amz-Cf-Pop: BOM78-P5
+10 < X-Amz-Cf-Id: 7eWctUdG0mvOkt_kG92eJ0_IJlg_GULoxB73qVVE1ei1jU76cCmUCA==
+[]
+
+
+15:54:04.518 [main] DEBUG com.intuit.karate - request:
+11 > POST https://api.todoist.com/rest/v1/tasks
+11 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+11 > Cookie: csrf=820a341c3f594cc19359c0965043ad53
+11 > Content-Type: application/json; charset=UTF-8
+11 > Content-Length: 84
+11 > Host: api.todoist.com
+11 > Connection: Keep-Alive
+11 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+11 > Accept-Encoding: gzip,deflate
+{"content":"Buy Milk","due_string":"tomorrow at 12:00","due_lang":"en","priority":4}
+
+15:54:06.447 [main] DEBUG com.intuit.karate - response time in milliseconds: 1929
+11 < 200
+11 < Content-Type: application/json
+11 < Content-Length: 480
+11 < Connection: keep-alive
+11 < Date: Fri, 11 Nov 2022 10:24:06 GMT
+11 < Access-Control-Allow-Credentials: false
+11 < Access-Control-Allow-Origin: *
+11 < Cache-Control: no-cache
+11 < Referrer-Policy: strict-origin-when-cross-origin
+11 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+11 < Vary: Accept-Encoding
+11 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+11 < X-Cache: Miss from cloudfront
+11 < Via: 1.1 2fb9bc1cd7b9b99ee1d8d63cef8fdba6.cloudfront.net (CloudFront)
+11 < X-Amz-Cf-Pop: BOM78-P5
+11 < X-Amz-Cf-Id: SYTKV8cdG0CaKNlPzql-FsagPMH8eDXZ2GIj7S2_Yw7wx2tbELc4kg==
+{
+	"id": 6342335526,
+	"assigner": 0,
+	"project_id": 2301601652,
+	"section_id": 0,
+	"order": 2,
+	"content": "Buy Milk",
+	"description": "",
+	"completed": false,
+	"label_ids": [],
+	"priority": 4,
+	"comment_count": 0,
+	"creator": 41712991,
+	"created": "2022-11-11T10:24:06.061555Z",
+	"due": {
+		"date": "2022-11-12",
+		"string": "tomorrow at 12:00",
+		"lang": "en",
+		"datetime": "2022-11-12T12:00:00",
+		"recurring": false
+	},
+	"url": "https://todoist.com/showTask?id=6342335526"
+}
+
+
+15:54:06.451 [main] INFO  com.intuit.karate - [print] {
+  "id": 6342335526,
+  "assigner": 0,
+  "project_id": 2301601652,
+  "section_id": 0,
+  "order": 2,
+  "content": "Buy Milk",
+  "description": "",
+  "completed": false,
+  "label_ids": [
+  ],
+  "priority": 4,
+  "comment_count": 0,
+  "creator": 41712991,
+  "created": "2022-11-11T10:24:06.061555Z",
+  "due": {
+    "date": "2022-11-12",
+    "string": "tomorrow at 12:00",
+    "lang": "en",
+    "datetime": "2022-11-12T12:00:00",
+    "recurring": false
+  },
+  "url": "https://todoist.com/showTask?id=6342335526"
+}
+ 
+15:54:06.463 [main] DEBUG com.intuit.karate - request:
+12 > GET https://api.todoist.com/rest/v1/tasks/6342335526
+12 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+12 > Cookie: csrf=820a341c3f594cc19359c0965043ad53
+12 > Host: api.todoist.com
+12 > Connection: Keep-Alive
+12 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+12 > Accept-Encoding: gzip,deflate
+
+
+15:54:06.857 [main] DEBUG com.intuit.karate - response time in milliseconds: 393
+12 < 200
+12 < Content-Type: application/json
+12 < Content-Length: 480
+12 < Connection: keep-alive
+12 < Date: Fri, 11 Nov 2022 10:24:06 GMT
+12 < Access-Control-Allow-Credentials: false
+12 < Access-Control-Allow-Origin: *
+12 < Referrer-Policy: strict-origin-when-cross-origin
+12 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+12 < Vary: Accept-Encoding
+12 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+12 < X-Cache: Miss from cloudfront
+12 < Via: 1.1 2fb9bc1cd7b9b99ee1d8d63cef8fdba6.cloudfront.net (CloudFront)
+12 < X-Amz-Cf-Pop: BOM78-P5
+12 < X-Amz-Cf-Id: 2VykH6JooLpnF4k5atusX-d7Rc5pk4hOPJfQQ9kolpsQT-xZJsv87w==
+{
+	"id": 6342335526,
+	"assigner": 0,
+	"project_id": 2301601652,
+	"section_id": 0,
+	"order": 2,
+	"content": "Buy Milk",
+	"description": "",
+	"completed": false,
+	"label_ids": [],
+	"priority": 4,
+	"comment_count": 0,
+	"creator": 41712991,
+	"created": "2022-11-11T10:24:06.061555Z",
+	"due": {
+		"date": "2022-11-12",
+		"string": "tomorrow at 12:00",
+		"lang": "en",
+		"datetime": "2022-11-12T12:00:00",
+		"recurring": false
+	},
+	"url": "https://todoist.com/showTask?id=6342335526"
+}
+
+
+15:54:06.869 [main] DEBUG com.intuit.karate - request:
+13 > POST https://api.todoist.com/rest/v1/tasks/6342335526
+13 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+13 > Cookie: csrf=820a341c3f594cc19359c0965043ad53
+13 > Content-Type: application/json; charset=UTF-8
+13 > Content-Length: 24
+13 > Host: api.todoist.com
+13 > Connection: Keep-Alive
+13 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+13 > Accept-Encoding: gzip,deflate
+{"content":"Buy Coffee"}
+
+15:54:07.796 [main] DEBUG com.intuit.karate - response time in milliseconds: 925
+13 < 204
+13 < Content-Type: text/html; charset=utf-8
+13 < Connection: keep-alive
+13 < Date: Fri, 11 Nov 2022 10:24:07 GMT
+13 < Access-Control-Allow-Credentials: false
+13 < Access-Control-Allow-Origin: *
+13 < Cache-Control: no-cache
+13 < Referrer-Policy: strict-origin-when-cross-origin
+13 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+13 < Vary: Accept-Encoding
+13 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+13 < X-Cache: Miss from cloudfront
+13 < Via: 1.1 853b5be3b78b835fb7185ce90c946656.cloudfront.net (CloudFront)
+13 < X-Amz-Cf-Pop: BOM78-P5
+13 < X-Amz-Cf-Id: 0egMs9nIeZTmTpax_gIxVIUN3_lRXe3Z9Ub5tG0_QHPBzBsJlgGidQ==
+
+
+15:54:07.802 [main] DEBUG com.intuit.karate - request:
+14 > POST https://api.todoist.com/rest/v1/tasks/6342335526/close
+14 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+14 > Cookie: csrf=820a341c3f594cc19359c0965043ad53
+14 > Host: api.todoist.com
+14 > Connection: Keep-Alive
+14 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+14 > Accept-Encoding: gzip,deflate
+
+
+15:54:08.904 [main] DEBUG com.intuit.karate - response time in milliseconds: 1101
+14 < 204
+14 < Content-Type: text/html; charset=utf-8
+14 < Connection: keep-alive
+14 < Date: Fri, 11 Nov 2022 10:24:08 GMT
+14 < Access-Control-Allow-Credentials: false
+14 < Access-Control-Allow-Origin: *
+14 < Cache-Control: no-cache
+14 < Referrer-Policy: strict-origin-when-cross-origin
+14 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+14 < Vary: Accept-Encoding
+14 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+14 < X-Cache: Miss from cloudfront
+14 < Via: 1.1 aa6523b9d47ec443d130f60e2b450e3c.cloudfront.net (CloudFront)
+14 < X-Amz-Cf-Pop: BOM78-P5
+14 < X-Amz-Cf-Id: SU9lyoEcR0mcdrJzE-ZSmaf5o7Yy_rWrzUmfMmwiKQgjnvGYPyxpPw==
+
+
+15:54:08.929 [main] DEBUG com.intuit.karate - request:
+15 > GET https://api.todoist.com/rest/v1/comments?tasks_ID=6342335526
+15 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+15 > Cookie: csrf=820a341c3f594cc19359c0965043ad53
+15 > Host: api.todoist.com
+15 > Connection: Keep-Alive
+15 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+15 > Accept-Encoding: gzip,deflate
+
+
+15:54:09.621 [main] DEBUG com.intuit.karate - response time in milliseconds: 691
+15 < 400
+15 < Content-Type: text/plain; charset=utf-8
+15 < Content-Length: 30
+15 < Connection: keep-alive
+15 < Date: Fri, 11 Nov 2022 10:24:09 GMT
+15 < Access-Control-Allow-Credentials: false
+15 < Access-Control-Allow-Origin: *
+15 < Referrer-Policy: strict-origin-when-cross-origin
+15 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+15 < Vary: Accept-Encoding
+15 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+15 < X-Cache: Error from cloudfront
+15 < Via: 1.1 f104d67b43a55209d755ce5f5be8730a.cloudfront.net (CloudFront)
+15 < X-Amz-Cf-Pop: BOM78-P5
+15 < X-Amz-Cf-Id: CwSgDC9nmY_gtaFEqMFZt6gFYJIUkyECcAZfGQwJZKgwqwBtNXBeRA==
+No id to filter notes provided
+
+15:54:09.623 [main] ERROR com.intuit.karate - classpath:KarateAssignment/feature/ucomments.feature:18
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 691, url: https://api.todoist.com/rest/v1/comments?tasks_ID=6342335526, response: 
+No id to filter notes provided
+classpath:KarateAssignment/feature/ucomments.feature:18
+15:54:09.626 [main] ERROR com.intuit.karate - classpath:KarateAssignment/feature/tasks.feature:64
+* def id = call read('ucomments.feature') {tasks_ID : '#(tasksID)'}
+status code was: 400, expected: 200, response time in milliseconds: 691, url: https://api.todoist.com/rest/v1/comments?tasks_ID=6342335526, response: 
+No id to filter notes provided
+classpath:KarateAssignment/feature/ucomments.feature:18
+classpath:KarateAssignment/feature/tasks.feature:64
+15:54:09.628 [main] ERROR com.intuit.karate - classpath:KarateAssignment/feature/sections.feature:50
+* def id = call read('tasks.feature') {section_Id : '#(sectionID)'}
+status code was: 400, expected: 200, response time in milliseconds: 691, url: https://api.todoist.com/rest/v1/comments?tasks_ID=6342335526, response: 
+No id to filter notes provided
+classpath:KarateAssignment/feature/ucomments.feature:18
+classpath:KarateAssignment/feature/tasks.feature:64
+classpath:KarateAssignment/feature/sections.feature:50
+15:54:09.629 [main] ERROR com.intuit.karate - classpath:KarateAssignment/feature/project.feature:49
+* def id = call read('sections.feature') {projID : '#(projectID)'}
+status code was: 400, expected: 200, response time in milliseconds: 691, url: https://api.todoist.com/rest/v1/comments?tasks_ID=6342335526, response: 
+No id to filter notes provided
+classpath:KarateAssignment/feature/ucomments.feature:18
+classpath:KarateAssignment/feature/tasks.feature:64
+classpath:KarateAssignment/feature/sections.feature:50
+classpath:KarateAssignment/feature/project.feature:49
+15:54:10.544 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:54:10.606 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/sections?projID=%23%28projectID%29
+1 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:54:11.363 [main] DEBUG com.intuit.karate - response time in milliseconds: 756
+1 < 200
+1 < Content-Type: application/json
+1 < Content-Length: 281
+1 < Connection: keep-alive
+1 < Date: Fri, 11 Nov 2022 10:24:11 GMT
+1 < Access-Control-Allow-Credentials: false
+1 < Access-Control-Allow-Origin: *
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < Vary: Accept-Encoding
+1 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 345f496d00ae1b7643706de6cdfc0808.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOM78-P5
+1 < X-Amz-Cf-Id: ZpxarIYQZYgmMVMR3jc2CmZZduyAYndTaFdCqn4PIJZMRhcvgGYCiw==
+1 < Set-Cookie: csrf=f305bd0ad8c64f96b9259d3591ff7eb6; Max-Age=1983522251000; Expires=Sun, 06 Mar 64878 21:27:31 GMT; Domain=api.todoist.com; Secure
+[
+	{
+		"id": 106557305,
+		"project_id": 2302157203,
+		"order": 9,
+		"name": "Supermarket"
+	},
+	{
+		"id": 106557310,
+		"project_id": 2302157203,
+		"order": 10,
+		"name": "Supermarket"
+	},
+	{
+		"id": 106570098,
+		"project_id": 2302157203,
+		"order": 11,
+		"name": "Supermarket"
+	}
+]
+
+
+15:54:11.379 [main] DEBUG com.intuit.karate - request:
+2 > POST https://api.todoist.com/rest/v1/sections
+2 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+2 > Cookie: csrf=f305bd0ad8c64f96b9259d3591ff7eb6
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 46
+2 > Host: api.todoist.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+2 > Accept-Encoding: gzip,deflate
+{"project_id":"2302157203","name":"Groceries"}
+
+15:54:11.875 [main] DEBUG com.intuit.karate - response time in milliseconds: 495
+2 < 200
+2 < Content-Type: application/json
+2 < Content-Length: 84
+2 < Connection: keep-alive
+2 < Date: Fri, 11 Nov 2022 10:24:11 GMT
+2 < Access-Control-Allow-Credentials: false
+2 < Access-Control-Allow-Origin: *
+2 < Cache-Control: no-cache
+2 < Referrer-Policy: strict-origin-when-cross-origin
+2 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+2 < Vary: Accept-Encoding
+2 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+2 < X-Cache: Miss from cloudfront
+2 < Via: 1.1 204734520f5130526e378b271a301fda.cloudfront.net (CloudFront)
+2 < X-Amz-Cf-Pop: BOM78-P5
+2 < X-Amz-Cf-Id: bYvE34hNBn6CXUpBNQ_W42wamTcwltZ8LZF9hkUae_Ef_J-aT7G6_g==
+{
+	"id": 106570106,
+	"project_id": 2302157203,
+	"order": 12,
+	"name": "Groceries"
+}
+
+
+15:54:11.877 [main] INFO  com.intuit.karate - [print] {
+  "id": 106570106,
+  "project_id": 2302157203,
+  "order": 12,
+  "name": "Groceries"
+}
+ 
+15:54:11.883 [main] DEBUG com.intuit.karate - request:
+3 > GET https://api.todoist.com/rest/v1/sections/106570106
+3 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+3 > Cookie: csrf=f305bd0ad8c64f96b9259d3591ff7eb6
+3 > Host: api.todoist.com
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+3 > Accept-Encoding: gzip,deflate
+
+
+15:54:12.182 [main] DEBUG com.intuit.karate - response time in milliseconds: 297
+3 < 200
+3 < Content-Type: application/json
+3 < Content-Length: 84
+3 < Connection: keep-alive
+3 < Date: Fri, 11 Nov 2022 10:24:12 GMT
+3 < Access-Control-Allow-Credentials: false
+3 < Access-Control-Allow-Origin: *
+3 < Referrer-Policy: strict-origin-when-cross-origin
+3 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+3 < Vary: Accept-Encoding
+3 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+3 < X-Cache: Miss from cloudfront
+3 < Via: 1.1 24308854e88feb19b441efca32b2020c.cloudfront.net (CloudFront)
+3 < X-Amz-Cf-Pop: BOM78-P5
+3 < X-Amz-Cf-Id: yMsr0qsAygUojKbOKN3Hhoz6lJa4XEKl6mubCoDABdb3ibYm_3tZ2g==
+{
+	"id": 106570106,
+	"project_id": 2302157203,
+	"order": 12,
+	"name": "Groceries"
+}
+
+
+15:54:12.189 [main] DEBUG com.intuit.karate - request:
+4 > POST https://api.todoist.com/rest/v1/sections/106570106
+4 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+4 > Cookie: csrf=f305bd0ad8c64f96b9259d3591ff7eb6
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 22
+4 > Host: api.todoist.com
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+4 > Accept-Encoding: gzip,deflate
+{"name":"Supermarket"}
+
+15:54:13.626 [main] DEBUG com.intuit.karate - response time in milliseconds: 1436
+4 < 204
+4 < Content-Type: text/html; charset=utf-8
+4 < Connection: keep-alive
+4 < Date: Fri, 11 Nov 2022 10:24:13 GMT
+4 < Access-Control-Allow-Credentials: false
+4 < Access-Control-Allow-Origin: *
+4 < Cache-Control: no-cache
+4 < Referrer-Policy: strict-origin-when-cross-origin
+4 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+4 < Vary: Accept-Encoding
+4 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+4 < X-Cache: Miss from cloudfront
+4 < Via: 1.1 360075adf1c9391fe1ab46537f601412.cloudfront.net (CloudFront)
+4 < X-Amz-Cf-Pop: BOM78-P5
+4 < X-Amz-Cf-Id: c3DPCAPUEAKfcKOLHU7Amgj5XtDM6ZPOwlqu9jEWlX8A8g0fzCWfIg==
+
+
+15:54:13.649 [main] DEBUG com.intuit.karate - request:
+5 > GET https://api.todoist.com/rest/v1/tasks?section_Id=106570106
+5 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+5 > Cookie: csrf=f305bd0ad8c64f96b9259d3591ff7eb6
+5 > Host: api.todoist.com
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+5 > Accept-Encoding: gzip,deflate
+
+
+15:54:14.435 [main] DEBUG com.intuit.karate - response time in milliseconds: 784
+5 < 200
+5 < Content-Type: application/json
+5 < Content-Length: 3
+5 < Connection: keep-alive
+5 < Date: Fri, 11 Nov 2022 10:24:14 GMT
+5 < Access-Control-Allow-Credentials: false
+5 < Access-Control-Allow-Origin: *
+5 < Referrer-Policy: strict-origin-when-cross-origin
+5 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+5 < Vary: Accept-Encoding
+5 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+5 < X-Cache: Miss from cloudfront
+5 < Via: 1.1 55c998bf476c1eed8349d44de74f848a.cloudfront.net (CloudFront)
+5 < X-Amz-Cf-Pop: BOM78-P5
+5 < X-Amz-Cf-Id: SgNPkCGD3t_AznZUhcTqZkoe69GW08uqf0LDj01zJqkAbpF4B3-big==
+[]
+
+
+15:54:14.443 [main] DEBUG com.intuit.karate - request:
+6 > POST https://api.todoist.com/rest/v1/tasks
+6 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+6 > Cookie: csrf=f305bd0ad8c64f96b9259d3591ff7eb6
+6 > Content-Type: application/json; charset=UTF-8
+6 > Content-Length: 84
+6 > Host: api.todoist.com
+6 > Connection: Keep-Alive
+6 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+6 > Accept-Encoding: gzip,deflate
+{"content":"Buy Milk","due_string":"tomorrow at 12:00","due_lang":"en","priority":4}
+
+15:54:15.514 [main] DEBUG com.intuit.karate - response time in milliseconds: 1071
+6 < 200
+6 < Content-Type: application/json
+6 < Content-Length: 480
+6 < Connection: keep-alive
+6 < Date: Fri, 11 Nov 2022 10:24:15 GMT
+6 < Access-Control-Allow-Credentials: false
+6 < Access-Control-Allow-Origin: *
+6 < Cache-Control: no-cache
+6 < Referrer-Policy: strict-origin-when-cross-origin
+6 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+6 < Vary: Accept-Encoding
+6 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+6 < X-Cache: Miss from cloudfront
+6 < Via: 1.1 78fad162bf3327a21c1befb2923b3f84.cloudfront.net (CloudFront)
+6 < X-Amz-Cf-Pop: BOM78-P5
+6 < X-Amz-Cf-Id: By7IGx6iBxa-ck6cOLjbu2OyevqVqTR2H6U9SsQp_j3CspeHejDXyw==
+{
+	"id": 6342335917,
+	"assigner": 0,
+	"project_id": 2301601652,
+	"section_id": 0,
+	"order": 2,
+	"content": "Buy Milk",
+	"description": "",
+	"completed": false,
+	"label_ids": [],
+	"priority": 4,
+	"comment_count": 0,
+	"creator": 41712991,
+	"created": "2022-11-11T10:24:15.215175Z",
+	"due": {
+		"date": "2022-11-12",
+		"string": "tomorrow at 12:00",
+		"lang": "en",
+		"datetime": "2022-11-12T12:00:00",
+		"recurring": false
+	},
+	"url": "https://todoist.com/showTask?id=6342335917"
+}
+
+
+15:54:15.516 [main] INFO  com.intuit.karate - [print] {
+  "id": 6342335917,
+  "assigner": 0,
+  "project_id": 2301601652,
+  "section_id": 0,
+  "order": 2,
+  "content": "Buy Milk",
+  "description": "",
+  "completed": false,
+  "label_ids": [
+  ],
+  "priority": 4,
+  "comment_count": 0,
+  "creator": 41712991,
+  "created": "2022-11-11T10:24:15.215175Z",
+  "due": {
+    "date": "2022-11-12",
+    "string": "tomorrow at 12:00",
+    "lang": "en",
+    "datetime": "2022-11-12T12:00:00",
+    "recurring": false
+  },
+  "url": "https://todoist.com/showTask?id=6342335917"
+}
+ 
+15:54:15.528 [main] DEBUG com.intuit.karate - request:
+7 > GET https://api.todoist.com/rest/v1/tasks/6342335917
+7 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+7 > Cookie: csrf=f305bd0ad8c64f96b9259d3591ff7eb6
+7 > Host: api.todoist.com
+7 > Connection: Keep-Alive
+7 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+7 > Accept-Encoding: gzip,deflate
+
+
+15:54:16.789 [main] DEBUG com.intuit.karate - response time in milliseconds: 1260
+7 < 200
+7 < Content-Type: application/json
+7 < Content-Length: 480
+7 < Connection: keep-alive
+7 < Date: Fri, 11 Nov 2022 10:24:16 GMT
+7 < Access-Control-Allow-Credentials: false
+7 < Access-Control-Allow-Origin: *
+7 < Referrer-Policy: strict-origin-when-cross-origin
+7 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+7 < Vary: Accept-Encoding
+7 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+7 < X-Cache: Miss from cloudfront
+7 < Via: 1.1 4ceb118e04d8caeb5b1fa5f1e463856e.cloudfront.net (CloudFront)
+7 < X-Amz-Cf-Pop: BOM78-P5
+7 < X-Amz-Cf-Id: yjNVWrOaBYfthAYBjAv-Mcw7FvoqM7ottpcM0rPjtYgcJhuzbvEPCg==
+{
+	"id": 6342335917,
+	"assigner": 0,
+	"project_id": 2301601652,
+	"section_id": 0,
+	"order": 2,
+	"content": "Buy Milk",
+	"description": "",
+	"completed": false,
+	"label_ids": [],
+	"priority": 4,
+	"comment_count": 0,
+	"creator": 41712991,
+	"created": "2022-11-11T10:24:15.215175Z",
+	"due": {
+		"date": "2022-11-12",
+		"string": "tomorrow at 12:00",
+		"lang": "en",
+		"datetime": "2022-11-12T12:00:00",
+		"recurring": false
+	},
+	"url": "https://todoist.com/showTask?id=6342335917"
+}
+
+
+15:54:16.798 [main] DEBUG com.intuit.karate - request:
+8 > POST https://api.todoist.com/rest/v1/tasks/6342335917
+8 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+8 > Cookie: csrf=f305bd0ad8c64f96b9259d3591ff7eb6
+8 > Content-Type: application/json; charset=UTF-8
+8 > Content-Length: 24
+8 > Host: api.todoist.com
+8 > Connection: Keep-Alive
+8 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+8 > Accept-Encoding: gzip,deflate
+{"content":"Buy Coffee"}
+
+15:54:17.622 [main] DEBUG com.intuit.karate - response time in milliseconds: 823
+8 < 204
+8 < Content-Type: text/html; charset=utf-8
+8 < Connection: keep-alive
+8 < Date: Fri, 11 Nov 2022 10:24:17 GMT
+8 < Access-Control-Allow-Credentials: false
+8 < Access-Control-Allow-Origin: *
+8 < Cache-Control: no-cache
+8 < Referrer-Policy: strict-origin-when-cross-origin
+8 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+8 < Vary: Accept-Encoding
+8 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+8 < X-Cache: Miss from cloudfront
+8 < Via: 1.1 4560972c6489a38a7c71390784e8d106.cloudfront.net (CloudFront)
+8 < X-Amz-Cf-Pop: BOM78-P5
+8 < X-Amz-Cf-Id: wFSaPNjlJ5_Eq-LkoKWlPItBEoCzqQrFfM3Z8iiPHU3nSGAkOF6eig==
+
+
+15:54:17.627 [main] DEBUG com.intuit.karate - request:
+9 > POST https://api.todoist.com/rest/v1/tasks/6342335917/close
+9 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+9 > Cookie: csrf=f305bd0ad8c64f96b9259d3591ff7eb6
+9 > Host: api.todoist.com
+9 > Connection: Keep-Alive
+9 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+9 > Accept-Encoding: gzip,deflate
+
+
+15:54:18.530 [main] DEBUG com.intuit.karate - response time in milliseconds: 903
+9 < 204
+9 < Content-Type: text/html; charset=utf-8
+9 < Connection: keep-alive
+9 < Date: Fri, 11 Nov 2022 10:24:18 GMT
+9 < Access-Control-Allow-Credentials: false
+9 < Access-Control-Allow-Origin: *
+9 < Cache-Control: no-cache
+9 < Referrer-Policy: strict-origin-when-cross-origin
+9 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+9 < Vary: Accept-Encoding
+9 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+9 < X-Cache: Miss from cloudfront
+9 < Via: 1.1 42c82f231b0a4d050daeb1e8e5afdece.cloudfront.net (CloudFront)
+9 < X-Amz-Cf-Pop: BOM78-P5
+9 < X-Amz-Cf-Id: 0_tx-psIv60IJ8sze-zEO28otXxzJKrUyw6v5R3eCZoZ87mO4kNN_Q==
+
+
+15:54:18.546 [main] DEBUG com.intuit.karate - request:
+10 > GET https://api.todoist.com/rest/v1/comments?tasks_ID=6342335917
+10 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+10 > Cookie: csrf=f305bd0ad8c64f96b9259d3591ff7eb6
+10 > Host: api.todoist.com
+10 > Connection: Keep-Alive
+10 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+10 > Accept-Encoding: gzip,deflate
+
+
+15:54:18.837 [main] DEBUG com.intuit.karate - response time in milliseconds: 291
+10 < 400
+10 < Content-Type: text/plain; charset=utf-8
+10 < Content-Length: 30
+10 < Connection: keep-alive
+10 < Date: Fri, 11 Nov 2022 10:24:18 GMT
+10 < Access-Control-Allow-Credentials: false
+10 < Access-Control-Allow-Origin: *
+10 < Referrer-Policy: strict-origin-when-cross-origin
+10 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+10 < Vary: Accept-Encoding
+10 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+10 < X-Cache: Error from cloudfront
+10 < Via: 1.1 8ef0b0e6ce9484cc7ec662abacbfc63a.cloudfront.net (CloudFront)
+10 < X-Amz-Cf-Pop: BOM78-P5
+10 < X-Amz-Cf-Id: t0UTQvEWFcxH3rgH5OM_Ns9a235UzHao6lZD_Kq5ftmLFZf6eVWeAQ==
+No id to filter notes provided
+
+15:54:18.839 [main] ERROR com.intuit.karate - classpath:KarateAssignment/feature/ucomments.feature:18
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 291, url: https://api.todoist.com/rest/v1/comments?tasks_ID=6342335917, response: 
+No id to filter notes provided
+classpath:KarateAssignment/feature/ucomments.feature:18
+15:54:18.841 [main] ERROR com.intuit.karate - classpath:KarateAssignment/feature/tasks.feature:64
+* def id = call read('ucomments.feature') {tasks_ID : '#(tasksID)'}
+status code was: 400, expected: 200, response time in milliseconds: 291, url: https://api.todoist.com/rest/v1/comments?tasks_ID=6342335917, response: 
+No id to filter notes provided
+classpath:KarateAssignment/feature/ucomments.feature:18
+classpath:KarateAssignment/feature/tasks.feature:64
+15:54:18.842 [main] ERROR com.intuit.karate - classpath:KarateAssignment/feature/sections.feature:50
+* def id = call read('tasks.feature') {section_Id : '#(sectionID)'}
+status code was: 400, expected: 200, response time in milliseconds: 291, url: https://api.todoist.com/rest/v1/comments?tasks_ID=6342335917, response: 
+No id to filter notes provided
+classpath:KarateAssignment/feature/ucomments.feature:18
+classpath:KarateAssignment/feature/tasks.feature:64
+classpath:KarateAssignment/feature/sections.feature:50
+15:54:19.448 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:54:19.463 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/tasks?section_Id=%23%28sectionID%29
+1 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:54:20.087 [main] DEBUG com.intuit.karate - response time in milliseconds: 623
+1 < 400
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 21
+1 < Connection: keep-alive
+1 < Date: Fri, 11 Nov 2022 10:24:20 GMT
+1 < Access-Control-Allow-Credentials: false
+1 < Access-Control-Allow-Origin: *
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < Vary: Accept-Encoding
+1 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 6f6cb5b84bda77c596c1c72fe048d038.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOM78-P5
+1 < X-Amz-Cf-Id: 2zDTYSrO4p3j6qEVGODdb9NPMOgu1evk9EcXLv6Q3QM_AfODCfTtzQ==
+1 < Set-Cookie: csrf=36f32630c6d3441eb4db6c39cc6afcec; Max-Age=1983522260000; Expires=Sun, 06 Mar 64878 23:57:40 GMT; Domain=api.todoist.com; Secure
+section_id is invalid
+
+15:54:20.089 [main] ERROR com.intuit.karate - classpath:KarateAssignment/feature/tasks.feature:20
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 623, url: https://api.todoist.com/rest/v1/tasks?section_Id=%23%28sectionID%29, response: 
+section_id is invalid
+classpath:KarateAssignment/feature/tasks.feature:20
+15:54:20.340 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:54:20.354 [main] DEBUG com.intuit.karate - request:
+1 > GET https://api.todoist.com/rest/v1/comments?tasks_ID=%23%28tasksID%29
+1 > Authorization:  Bearer 87dae54c99ca2bb86f2df4b6d8310cd7ed92f523
+1 > Host: api.todoist.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_352)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:54:20.667 [main] DEBUG com.intuit.karate - response time in milliseconds: 311
+1 < 400
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 30
+1 < Connection: keep-alive
+1 < Date: Fri, 11 Nov 2022 10:24:20 GMT
+1 < Access-Control-Allow-Credentials: false
+1 < Access-Control-Allow-Origin: *
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 < Vary: Accept-Encoding
+1 < Warning: 119 - "Deprecated API version. Will be removed on 2022-11-30"
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 24308854e88feb19b441efca32b2020c.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: BOM78-P5
+1 < X-Amz-Cf-Id: lIPXpmG5kUKm2D-VexKig16bbyW9CQSexcfXUN1Jmn5AcM9hovDjkw==
+1 < Set-Cookie: csrf=088796feefd44d969afd76a4f5f20f58; Max-Age=1983522260000; Expires=Sun, 06 Mar 64878 23:57:40 GMT; Domain=api.todoist.com; Secure
+No id to filter notes provided
+
+15:54:20.669 [main] ERROR com.intuit.karate - classpath:KarateAssignment/feature/ucomments.feature:18
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 311, url: https://api.todoist.com/rest/v1/comments?tasks_ID=%23%28tasksID%29, response: 
+No id to filter notes provided
+classpath:KarateAssignment/feature/ucomments.feature:18

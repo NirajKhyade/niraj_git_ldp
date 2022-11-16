@@ -1,0 +1,39 @@
+-------------------------------------------------------------------------------
+Test set: KarateAssignment.Test
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 28.989 s <<< FAILURE! - in KarateAssignment.Test
+testAll[1][1]  Time elapsed: 5.221 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 400, expected: 204, response time in milliseconds: 804, url: https://api.todoist.com/rest/v1/labels/2163168402, response: 
+Label with this name already exists
+classpath:KarateAssignment/feature/labels.feature:42
+
+testAll[2][1]  Time elapsed: 12.971 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 400, expected: 200, response time in milliseconds: 691, url: https://api.todoist.com/rest/v1/comments?tasks_ID=6342335526, response: 
+No id to filter notes provided
+classpath:KarateAssignment/feature/ucomments.feature:18
+classpath:KarateAssignment/feature/tasks.feature:64
+classpath:KarateAssignment/feature/sections.feature:50
+classpath:KarateAssignment/feature/project.feature:49
+
+testAll[3][1]  Time elapsed: 8.897 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 400, expected: 200, response time in milliseconds: 291, url: https://api.todoist.com/rest/v1/comments?tasks_ID=6342335917, response: 
+No id to filter notes provided
+classpath:KarateAssignment/feature/ucomments.feature:18
+classpath:KarateAssignment/feature/tasks.feature:64
+classpath:KarateAssignment/feature/sections.feature:50
+
+testAll[4][1]  Time elapsed: 0.892 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 400, expected: 200, response time in milliseconds: 623, url: https://api.todoist.com/rest/v1/tasks?section_Id=%23%28sectionID%29, response: 
+section_id is invalid
+classpath:KarateAssignment/feature/tasks.feature:20
+
+testAll[5][1]  Time elapsed: 0.722 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 400, expected: 200, response time in milliseconds: 311, url: https://api.todoist.com/rest/v1/comments?tasks_ID=%23%28tasksID%29, response: 
+No id to filter notes provided
+classpath:KarateAssignment/feature/ucomments.feature:18
+
